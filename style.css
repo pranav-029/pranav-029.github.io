@@ -193,7 +193,7 @@ a {
 }
 
 .hero {
-  padding: clamp(54px, 7vw, 90px) 0 var(--space-7);
+  padding: clamp(64px, 8vw, 110px) 0 calc(var(--space-7) + 6px);
 }
 
 .hero__grid {
@@ -262,7 +262,12 @@ a {
 }
 
 .btn--ghost {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.btn--ghost:hover {
+  border-color: rgba(0, 212, 255, 0.22);
 }
 
 .btn:hover {
@@ -334,7 +339,7 @@ a {
 }
 
 .section {
-  padding: var(--space-7) 0;
+  padding: calc(var(--space-7) + 10px) 0;
 }
 
 .section--tight {
@@ -522,8 +527,23 @@ a {
   color: var(--muted);
 }
 
+.project__bullets {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.82);
+  display: grid;
+  gap: 8px;
+}
+
+.project__bullets strong {
+  color: rgba(255, 255, 255, 0.94);
+}
+
 .project__actions {
   margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .tags {
@@ -564,6 +584,11 @@ a {
 .link:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+.link--primary {
+  background: linear-gradient(180deg, rgba(0, 212, 255, 0.16), rgba(0, 212, 255, 0.06));
+  border-color: rgba(0, 212, 255, 0.28);
 }
 
 .contact {
