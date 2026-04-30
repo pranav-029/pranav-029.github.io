@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Pranav Bhamre, an aspiring Data Analyst who turns data into decisions using SQL, Python, Excel, and Power BI."
+    />
+    <title>Pranav Bhamre | Data Analyst Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Skip link (keyboard accessibility) -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- =========================
+         HEADER / NAVIGATION
+         ========================= -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__text">Pranav</span>
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Toggle menu</span>
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__links" id="navLinks">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#certifications">Certifications</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========================
+         MAIN CONTENT
+         ========================= -->
+    <main id="main">
+      <!-- =========================
+           HERO SECTION
+           ========================= -->
+      <section id="top" class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Aspiring Data Analyst</p>
+            <h1 class="hero__title">I turn data into decisions</h1>
+            <p class="hero__subtitle">
+              I analyze messy datasets, surface patterns, and present insights clearly through dashboards and reports.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn btn--ghost" href="#skills">View Skills</a>
+              <!-- TODO: Update this resume link later (replace the URL below with your latest resume link). -->
+              <a
+                class="btn btn--ghost"
+                href="https://raw.githubusercontent.com/pranav-029/resume/main/pranavbhamre_resume.pdf"
+                aria-label="Download resume"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+
+          <div class="hero__media reveal" aria-label="Profile image">
+            <div class="profile-card">
+              <img
+                id="profileImg"
+                class="profile-card__img"
+                src="images/profile.jpg"
+                alt="Pranav Bhamre"
+                width="520"
+                height="520"
+                loading="eager"
+                decoding="async"
+              />
+              <div class="profile-card__glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           ABOUT SECTION
+           ========================= -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">About</h2>
+            <p class="section__subtitle">
+              I’m Pranav Bhamre, an aspiring Data Analyst with a strong interest in turning raw data into meaningful
+              insights. I work with tools like SQL, Python, and Power BI to analyze data and support better
+              decision-making. I’m currently improving my skills through real-world projects and continuous learning,
+              with a goal to solve practical problems using data.
+            </p>
+          </div>
+
+          <div class="stats reveal">
+            <div class="card stat">
+              <p class="stat__value">6+</p>
+              <p class="stat__label">Mini projects & case studies</p>
+            </div>
+            <div class="card stat">
+              <p class="stat__value">4</p>
+              <p class="stat__label">Core tools in active use</p>
+            </div>
+            <div class="card stat">
+              <p class="stat__value">Daily</p>
+              <p class="stat__label">Learning & practice</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           SKILLS SECTION
+           ========================= -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Skills</h2>
+            <p class="section__subtitle">A focused toolkit for analysis, automation, and storytelling.</p>
+          </div>
+
+          <div class="grid skills reveal">
+            <article class="card skill">
+              <div class="skill__icon" aria-hidden="true">SQL</div>
+              <h3 class="skill__title">SQL</h3>
+              <p class="skill__text">Joins, CTEs, window functions, and data cleaning for reliable analysis.</p>
+            </article>
+            <article class="card skill">
+              <div class="skill__icon" aria-hidden="true">Py</div>
+              <h3 class="skill__title">Python</h3>
+              <p class="skill__text">Pandas workflows, quick exploration, and reproducible insights.</p>
+            </article>
+            <article class="card skill">
+              <div class="skill__icon" aria-hidden="true">XL</div>
+              <h3 class="skill__title">Excel</h3>
+              <p class="skill__text">Dashboards, pivots, formulas, and clean reporting for stakeholders.</p>
+            </article>
+            <article class="card skill">
+              <div class="skill__icon" aria-hidden="true">BI</div>
+              <h3 class="skill__title">Power BI</h3>
+              <p class="skill__text">Interactive visuals, DAX basics, and story-first dashboards.</p>
+            </article>
+          </div>
+
+          <!--
+            ✅ Skill card template (copy/paste to add more skills)
+
+            <article class="card skill">
+              <div class="skill__icon" aria-hidden="true">TB</div>
+              <h3 class="skill__title">Tableau</h3>
+              <p class="skill__text">1 short line about what you can do with this tool.</p>
+            </article>
+          -->
+        </div>
+      </section>
+
+      <!-- =========================
+           CERTIFICATIONS SECTION
+           ========================= -->
+      <section id="certifications" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Certifications</h2>
+            <p class="section__subtitle">Credentials that support my analytics fundamentals and tooling.</p>
+          </div>
+
+          <div class="grid certs reveal">
+            <article class="card cert">
+              <div class="cert__top">
+                <h3 class="cert__title">SQL (Basic)</h3>
+                <p class="cert__issuer">HackerRank • 2026</p>
+              </div>
+              <div class="tags" aria-label="Topics covered">
+                <span class="tag">Queries</span>
+                <span class="tag">Joins</span>
+                <span class="tag">Filtering</span>
+              </div>
+              <div class="cert__actions">
+                <!-- TODO: Paste your certificate PDF/credential URL in href below (e.g., Google Drive, LinkedIn, Credly, GitHub). -->
+                <a class="link cert__btn" href="#" aria-label="Open certificate (update link later)">View Certificate</a>
+              </div>
+            </article>
+
+            <article class="card cert">
+              <div class="cert__top">
+                <h3 class="cert__title">Microsoft Excel</h3>
+                <p class="cert__issuer">Course/Platform • 2026</p>
+              </div>
+              <div class="tags" aria-label="Topics covered">
+                <span class="tag">Dashboards</span>
+                <span class="tag">Pivot Tables</span>
+                <span class="tag">KPIs</span>
+              </div>
+              <div class="cert__actions">
+                <!-- TODO: Paste your certificate PDF/credential URL in href below (e.g., Google Drive, LinkedIn, Credly, GitHub). -->
+                <a class="link cert__btn" href="#" aria-label="Open certificate (update link later)">View Certificate</a>
+              </div>
+            </article>
+          </div>
+
+          <!--
+            ✅ Certification card template (copy/paste)
+
+            <article class="card cert">
+              <div class="cert__top">
+                <h3 class="cert__title">Certification Name</h3>
+                <p class="cert__issuer">Issuer • Year</p>
+              </div>
+              <div class="tags" aria-label="Topics covered">
+                <span class="tag">Topic 1</span>
+                <span class="tag">Topic 2</span>
+                <span class="tag">Topic 3</span>
+              </div>
+              <div class="cert__actions">
+                <a class="link cert__btn" href="https://credential-link" target="_blank" rel="noopener noreferrer"
+                  >View Certificate</a
+                >
+              </div>
+            </article>
+          -->
+        </div>
+      </section>
+
+      <!-- =========================
+           PROJECTS SECTION
+           ========================= -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Projects</h2>
+            <p class="section__subtitle">Selected work showcasing analysis, clarity, and presentation.</p>
+          </div>
+
+          <div class="grid projects reveal">
+            <article class="card project">
+              <div class="project__top">
+                <h3 class="project__title">Sales Data Analysis</h3>
+                <div class="tags" aria-label="Tools used">
+                  <span class="tag">SQL</span>
+                  <span class="tag">Data Cleaning</span>
+                  <span class="tag">Insights</span>
+                </div>
+              </div>
+              <p class="project__text">
+                Analyzed transaction-level sales data to identify top products, repeat customers, and revenue drivers.
+              </p>
+              <div class="project__actions">
+                <a
+                  class="link"
+                  href="https://github.com/pranav-029/sales-data-analysis-sql"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Sales Data Analysis repository"
+                  >View on GitHub</a
+                >
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="project__top">
+                <h3 class="project__title">Excel Dashboard</h3>
+                <div class="tags" aria-label="Tools used">
+                  <span class="tag">Excel</span>
+                  <span class="tag">Pivot Tables</span>
+                  <span class="tag">Charts</span>
+                </div>
+              </div>
+              <p class="project__text">
+                Built a clean dashboard to track KPIs and trends with slicers, pivots, and stakeholder-friendly views.
+              </p>
+              <div class="project__actions">
+                <a
+                  class="link"
+                  href="https://github.com/pranav-029/Excel-Sales-Dashboard-Project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Excel Dashboard repository"
+                  >View on GitHub</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <!--
+            ✅ Project card template (copy/paste to add more projects)
+
+            <article class="card project">
+              <div class="project__top">
+                <h3 class="project__title">Project Title</h3>
+                <div class="tags" aria-label="Tools used">
+                  <span class="tag">SQL</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Power BI</span>
+                </div>
+              </div>
+              <p class="project__text">
+                1–2 lines: what you analyzed/built and the key outcome/insight.
+              </p>
+              <div class="project__actions">
+                <a
+                  class="link"
+                  href="https://github.com/pranav-029/your-repo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open project repository"
+                >View on GitHub</a>
+              </div>
+            </article>
+          -->
+        </div>
+      </section>
+
+      <!-- =========================
+           CONTACT SECTION
+           ========================= -->
+      <section id="contact" class="section section--tight">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle">Open to internships and entry-level roles in data analytics.</p>
+          </div>
+
+          <div class="grid contact reveal">
+            <div class="card contact__item">
+              <p class="contact__label">Email</p>
+              <a class="contact__value link" href="mailto:bhamrepranav299@gmail.com">bhamrepranav299@gmail.com</a>
+            </div>
+            <div class="card contact__item">
+              <p class="contact__label">GitHub</p>
+              <a
+                class="contact__value link"
+                href="https://github.com/pranav-029"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com/pranav-029</a
+              >
+            </div>
+            <div class="card contact__item">
+              <p class="contact__label">LinkedIn</p>
+              <a
+                class="contact__value link"
+                href="https://www.linkedin.com/in/pranav-bhamre-291b55282/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >linkedin.com/in/pranav-bhamre</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">© <span id="year"></span> Pranav Bhamre. Built with HTML, CSS & JavaScript.</p>
+        <div class="footer__links" aria-label="Footer links">
+          <a class="link footer__link" href="mailto:bhamrepranav299@gmail.com">Email</a>
+          <a class="link footer__link" href="https://github.com/pranav-029" target="_blank" rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            class="link footer__link"
+            href="https://www.linkedin.com/in/pranav-bhamre-291b55282/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a class="link footer__top" href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
